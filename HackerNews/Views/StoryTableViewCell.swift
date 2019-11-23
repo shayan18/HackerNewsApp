@@ -21,7 +21,7 @@ class StoryTableViewCell: UITableViewCell {
         }
     }
     
-    var storyViewModel: StoryViewModel! {
+    private var storyViewModel: StoryViewModel! {
         didSet {
             self.authorLabel.text = storyViewModel.by
             self.titleLabel.text = storyViewModel.title
